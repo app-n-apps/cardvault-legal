@@ -100,7 +100,7 @@
 
     <div class="meta">
         <p><strong>Effective Date:</strong> March 1, 2026</p>
-        <p><strong>Last Updated:</strong> August 23, 2026</p>
+        <p><strong>Last Updated:</strong> August 26, 2026</p>
     </div>
 
     <div class="section">
@@ -168,7 +168,7 @@
         <h2>5. Data Retention</h2>
         <ul>
             <li><strong>Account Data:</strong> Retained while you use the app; deleted 90 days after account deletion</li>
-            <li><strong>Collection Data:</strong> Retained until you delete or export it</li>
+            <li><strong>Collection Data:</strong> Retained until you delete or export it, including photos of saved cards</li>
             <li><strong>Logs & Analytics:</strong> Automatically deleted after 90 days</li>
             <li><strong>Backup Data:</strong> May be retained in backups for up to 1 year</li>
         </ul>
@@ -203,9 +203,12 @@
         <ul>
             <li>To identify a card, the photo you scan is sent as an image to OpenRouter, an AI gateway, and processed by third-party AI models (currently Google Gemini; OpenAI GPT-4o as fallback)</li>
             <li>We do not send your name, email or account identifiers with the photo; the AI provider technically sees your network IP address, as with any direct internet request</li>
-            <li>We do not store your card photos on our servers; retention on the AI provider side is governed by their policies (OpenRouter, Google, OpenAI)</li>
-            <li>Saved collection photos stay on your device</li>
-</ul>
+            <li>Retention on the AI provider side is governed by their policies (OpenRouter, Google, OpenAI)</li>
+            <li>Scans you do not save are not stored on our servers</li>
+            <li>When you save a scanned card to a collection, a copy of its photo is stored on Firebase servers (Google Cloud Storage, United States) so your collection keeps its images if you reinstall the app or move to a new device</li>
+            <li>A stored photo is readable only by your account</li>
+            <li>Deleting a card deletes its stored photo; deleting your account deletes all of them</li>
+        </ul>
     </div>
 
     <div class="section">
