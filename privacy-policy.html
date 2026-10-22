@@ -136,7 +136,7 @@
             <tr><td>AppsFlyer</td><td>Attribution, user acquisition analytics</td></tr>
             <tr><td>Amplitude</td><td>Product analytics, user behavior</td></tr>
             <tr><td>Microsoft Clarity</td><td>Session replay — recordings of app screens and interactions, tied to a random installation identifier, used to diagnose usability problems</td></tr>
-            <tr><td>OpenRouter (AI gateway)</td><td>Card recognition — the photo you scan is processed by third-party AI models (currently Google Gemini, with OpenAI GPT-4o as fallback)</td></tr>
+            <tr><td>OpenRouter (AI gateway)</td><td>Card recognition — the photo you scan is processed by third-party AI models (currently Google Gemini and, for sports cards, Anthropic Claude, with OpenAI GPT-4o as fallback)</td></tr>
             <tr><td>Telegram</td><td>Delivery of feedback you send from the app, including the attached scan photo, to our support team</td></tr>
         </table>
         <p>We request App Tracking Transparency (ATT) permission before collecting your IDFA for attribution purposes.</p>
@@ -203,9 +203,9 @@
     <div class="section">
         <h2>8. Camera & Card Scanning</h2>
         <ul>
-            <li>To identify a card, the photo you scan is sent as an image to OpenRouter, an AI gateway, and processed by third-party AI models (currently Google Gemini; OpenAI GPT-4o as fallback)</li>
+            <li>To identify a card, the photo you scan is sent as an image to OpenRouter, an AI gateway, and processed by third-party AI models (currently Google Gemini and, for sports cards, Anthropic Claude; OpenAI GPT-4o as fallback)</li>
             <li>We do not send your name, email or account identifiers with the photo; the AI provider technically sees your network IP address, as with any direct internet request</li>
-            <li>Retention on the AI provider side is governed by their policies (OpenRouter, Google, OpenAI)</li>
+            <li>Retention on the AI provider side is governed by their policies (OpenRouter, Google, Anthropic, OpenAI)</li>
             <li>Scans you do not save are not stored on our servers, except when you send feedback about a scan (see below)</li>
             <li>When you save a scanned card to a collection, a copy of its photo is stored on Firebase servers (Google Cloud Storage, United States) so your collection keeps its images if you reinstall the app or move to a new device</li>
             <li>A stored photo is readable only by your account</li>
